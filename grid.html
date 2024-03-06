@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 600px;
+        height: 300px;
+        background-color: #eee;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      .parent div {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>two</div>
+      <div>three</div>
+    </div>
+  </body>
+</html>
