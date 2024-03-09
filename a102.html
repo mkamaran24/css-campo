@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .layout {
+        background-color: aquamarine;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+          "head head head head head"
+          "sec sec sec sec asid"
+          "foo foo foo foo foo";
+        grid-template-rows: 50px auto 50px;
+      }
+      header {
+        grid-area: head;
+        background-color: orange;
+      }
+      section {
+        grid-area: sec;
+        background-color: blueviolet;
+      }
+      aside {
+        grid-area: asid;
+        background-color: brown;
+      }
+      footer {
+        grid-area: foo;
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header></header>
+      <section></section>
+      <aside></aside>
+      <footer></footer>
+    </div>
+  </body>
+</html>
