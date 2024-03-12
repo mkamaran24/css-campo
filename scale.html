@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent {
+        width: 1024px;
+        height: 300px;
+        overflow: hidden;
+        background-color: #eee;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+
+      .parent img {
+        transition: 0.3s;
+      }
+
+      .parent:hover img {
+        transform: scale(1.3) rotate(5deg);
+        opacity: 0.6;
+      }
+
+      /* .parent div {
+        background-color: tomato;
+        padding: 20px;
+        transform: scale(2);
+        transition: 3s;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <img src="test.jpg" alt="" srcset="" />
+    </div>
+  </body>
+</html>
