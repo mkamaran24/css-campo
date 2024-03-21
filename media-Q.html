@@ -10,20 +10,40 @@
       }
 
       .parent {
-        width: 500px;
-        height: 200px;
+        /* height: 200px; */
         background-color: #eee;
-        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
 
-      @media (max-width: 1000px) and (min-width: 900px) {
-        .parent {
-          background-color: red;
+      .parent div {
+        padding: 10px;
+        background-color: antiquewhite;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      @media (min-width: 992px) {
+        .parent div {
+          width: calc(50% - 10px);
+        }
+      }
+
+      @media (min-width: 1250px) {
+        .parent div {
+          width: calc(25% - 10px);
         }
       }
     </style>
   </head>
   <body>
-    <div class="parent"></div>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
   </body>
 </html>
