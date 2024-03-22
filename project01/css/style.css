@@ -1,0 +1,113 @@
+/* start of Global Var */
+
+/* end of Global Var */
+
+/* start of Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Extra small */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    background-color: red;
+  }
+}
+
+/* Small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* XX-Large */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+/* end of Global Rules */
+
+/* start of header */
+
+.header {
+  /* background-color: red; */
+  padding: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo {
+  width: 60px;
+}
+
+.header .links {
+  position: relative;
+}
+.header .links .icons {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header .links .icons span {
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.header .links .icons span:first-child {
+  width: 100%;
+}
+.header .links .icons span:nth-child(2) {
+  width: 50%;
+  transition: 0.3s;
+}
+.header .links .icons span:last-child {
+  width: 100%;
+}
+
+.header .links:hover .icons span:nth-child(2) {
+  width: 100%;
+}
+
+/* end of header */
