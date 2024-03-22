@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger icon</title>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icons {
+        width: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .icons span {
+        height: 5px;
+        background-color: #333;
+
+        margin-bottom: 10px;
+      }
+      .icons span:first-child {
+        width: 100%;
+        transition: 0.3s;
+      }
+      .icons:hover span:first-child {
+        transform: translateY(-10px);
+      }
+      .icons span:nth-child(2) {
+        width: 50%;
+        transition: 0.3s;
+      }
+      .icons:hover span:nth-child(2) {
+        width: 100%;
+      }
+      .icons span:last-child {
+        width: 100%;
+        transition: 0.3s;
+      }
+      .icons:hover span:last-child {
+        transform: translateY(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="icons">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </body>
+</html>
