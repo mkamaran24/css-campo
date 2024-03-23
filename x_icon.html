@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icons {
+        width: 60px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .icons span {
+        height: 3px;
+
+        margin-bottom: 10px;
+        background-color: #333;
+      }
+      .icons span:first-child {
+        width: 100%;
+        transition: 0.3s;
+      }
+      /* .icons span:nth-child(2) {
+        width: 100%;
+        transition: 0.3s;
+      } */
+      .icons span:last-child {
+        width: 100%;
+        transition: 0.3s;
+      }
+
+      .icons:hover span:first-child {
+        transform: rotate(45deg) translate(20%);
+      }
+      /* .icons:hover span:nth-child(2) {
+        display: none;
+      } */
+      .icons:hover span:last-child {
+        transform: rotate(-45deg) translate(10%);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="icons">
+      <span></span>
+      <!-- <span></span> -->
+      <span></span>
+    </span>
+  </body>
+</html>
