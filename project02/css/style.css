@@ -1,0 +1,61 @@
+/* start of Global Var */
+
+:root {
+  --main-color: #10cab7;
+  --section-padding: 60px;
+  --section-color: #f6f6f6;
+  --secondary-color: #2c4755;
+  --main-duration: 0.5s;
+  --content-margin: 100px;
+}
+
+/* end of Global Var */
+
+/* start of Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* end of Global Rules */
