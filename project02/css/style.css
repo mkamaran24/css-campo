@@ -24,6 +24,8 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 ul {
   list-style: none;
@@ -59,3 +61,39 @@ a {
 }
 
 /* end of Global Rules */
+
+/* start of header */
+header {
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .container::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: calc(100% - 30px);
+  bottom: 0;
+  left: 15px;
+}
+
+header .container .logo img {
+  height: 40px;
+}
+
+header .container nav {
+  flex: 1;
+  align-self: flex-end;
+}
+
+header .container nav ul li {
+  display: inline-block;
+  /* margin-left: 5px; */
+}
+
+/* end of header */
