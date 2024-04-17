@@ -1,7 +1,7 @@
 /* start of Global Var */
 
 :root {
-  --main-color: #10cab7;
+  --main-color: #19c8fa;
   --section-padding: 60px;
   --section-color: #f6f6f6;
   --secondary-color: #2c4755;
@@ -88,12 +88,29 @@ header .container .logo img {
 
 header .container nav {
   flex: 1;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-header .container nav ul li {
-  display: inline-block;
-  /* margin-left: 5px; */
+header .container nav ul {
+  display: flex;
+}
+
+header .container nav ul li a {
+  padding: 30px 20px;
+  font-size: 14px;
+  color: white;
+  display: block;
+  position: relative;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 /* end of header */
