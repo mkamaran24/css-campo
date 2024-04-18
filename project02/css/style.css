@@ -113,6 +113,22 @@ header .container nav ul li a:hover {
   border-bottom: 1px solid var(--main-color);
 }
 
+header .container .search {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  border-left: 1px solid white;
+  margin-left: 15px;
+}
+
+header .container .search i {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  font-size: 20px;
+}
+
 /* end of header */
 
 /* start  */
