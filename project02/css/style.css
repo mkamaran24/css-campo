@@ -64,6 +64,10 @@ a {
 
 /* start of header */
 header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 header .container {
   display: flex;
@@ -131,4 +135,41 @@ header .container .search i {
 
 /* end of header */
 
-/* start  */
+/* start of landng */
+.landing {
+  min-height: 100vh;
+  background-color: red;
+  background-image: url("../img/landing.jpg");
+  background-size: cover;
+  position: relative;
+}
+.landing .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #19c8fa;
+  top: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 60%);
+}
+.landing .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  background-color: #19c8fa;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.landing .text .context {
+  width: 400px;
+}
+.landing .text .context h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+/* end of landing */
