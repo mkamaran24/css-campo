@@ -158,7 +158,7 @@ header .container .search i {
   left: 0;
   transform: translateY(-50%);
   width: 50%;
-  background-color: #19c8fa;
+  background-color: rgba(25, 200, 250, 0.5);
   padding: 50px;
   display: flex;
   justify-content: flex-end;
@@ -171,5 +171,35 @@ header .container .search i {
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: normal;
+}
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+}
+.landing .fa-angle-left {
+  left: 30px;
+}
+.landing .fa-angle-right {
+  right: 30px;
+}
+.landing .bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+}
+.landing .bullets li {
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.landing .bullets li.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 /* end of landing */
